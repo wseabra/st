@@ -1,0 +1,5 @@
+.ccls-cache/
+.ccls-root
+compile_commands.json
+config.def.h.orig
+

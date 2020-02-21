@@ -85,21 +85,21 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* solarized dark */
-	"#073642",  /*  0: black    */
+	"#002b36",  /*  0: black    */
 	"#dc322f",  /*  1: red      */
 	"#859900",  /*  2: green    */
 	"#b58900",  /*  3: yellow   */
 	"#268bd2",  /*  4: blue     */
-	"#d33682",  /*  5: magenta  */
+	"#6c71c4",  /*  5: magenta  */
 	"#2aa198",  /*  6: cyan     */
-	"#eee8d5",  /*  7: white    */
-	"#002b36",  /*  8: brblack  */
-	"#cb4b16",  /*  9: brred    */
-	"#586e75",  /* 10: brgreen  */
-	"#657b83",  /* 11: bryellow */
-	"#839496",  /* 12: brblue   */
+	"#93a1a1",  /*  7: white    */
+	"#657b83",  /*  8: brblack  */
+	"#dc322f",  /*  9: brred    */
+	"#fdf6e3",  /* 10: brgreen  */
+	"#b58900",  /* 11: bryellow */
+	"#268bd2",  /* 12: brblue   */
 	"#6c71c4",  /* 13: brmagenta*/
-	"#93a1a1",  /* 14: brcyan   */
+	"#2aa198",  /* 14: brcyan   */
 	"#fdf6e3",  /* 15: brwhite  */
 };
 
@@ -108,10 +108,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 12;
-unsigned int defaultbg = 8;
-static unsigned int defaultcs = 14;
-static unsigned int defaultrcs = 15;
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 15;
+static unsigned int defaultrcs = 14;
 
 /*
  * Default shape of cursor
@@ -146,6 +146,7 @@ static unsigned int defaultattr = 11;
  * Internal mouse shortcuts.
  * Beware that overloading Button1 will disable the selection.
  */
+const unsigned int mousescrollincrement = 3;
 static MouseShortcut mshortcuts[] = {
 	/* button               mask            string */
 	{ Button4,              XK_NO_MOD,      "\031" },
@@ -154,8 +155,8 @@ static MouseShortcut mshortcuts[] = {
 
 MouseKey mkeys[] = {
 	/* button               mask            function        argument */
-	{ Button4,              ShiftMask,      kscrollup,      {.i =  1} },
-	{ Button5,              ShiftMask,      kscrolldown,    {.i =  1} },
+	{ Button4,              ShiftMask,      kscrollup,      {.i =  mousescrollincrement} },
+	{ Button5,              ShiftMask,      kscrolldown,    {.i =  mousescrollincrement} },
 };
 
 /* Internal keyboard shortcuts. */
