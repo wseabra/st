@@ -85,22 +85,22 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* solarized dark */
-	"#002b36",  /*  0: black    */
-	"#dc322f",  /*  1: red      */
-	"#859900",  /*  2: green    */
-	"#b58900",  /*  3: yellow   */
-	"#268bd2",  /*  4: blue     */
-	"#6c71c4",  /*  5: magenta  */
-	"#2aa198",  /*  6: cyan     */
-	"#93a1a1",  /*  7: white    */
-	"#657b83",  /*  8: brblack  */
-	"#dc322f",  /*  9: brred    */
-	"#fdf6e3",  /* 10: brgreen  */
-	"#b58900",  /* 11: bryellow */
-	"#268bd2",  /* 12: brblue   */
-	"#6c71c4",  /* 13: brmagenta*/
-	"#2aa198",  /* 14: brcyan   */
-	"#fdf6e3",  /* 15: brwhite  */
+	"#040C1A",  /*  0: black    */
+	"#503645",  /*  1: red      */
+	"#6E3947",  /*  2: green    */
+	"#324D58",  /*  3: yellow   */
+	"#584C59",  /*  4: blue     */
+	"#913B48",  /*  5: magenta  */
+	"#A54754",  /*  6: cyan     */
+	"#df9da2",  /*  7: white    */
+	"#9c6d71",  /*  8: brblack  */
+	"#503645",  /*  9: brred    */
+	"#6E3947",  /* 10: brgreen  */
+	"#324D58",  /* 11: bryellow */
+	"#584C59",  /* 12: brblue   */
+	"#913B48",  /* 13: brmagenta*/
+	"#A54754",  /* 14: brcyan   */
+	"#df9da2",  /* 15: brwhite  */
 };
 
 
